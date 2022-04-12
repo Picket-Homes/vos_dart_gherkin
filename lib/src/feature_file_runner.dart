@@ -50,6 +50,7 @@ class FeatureFileRunner {
 
   Future<bool> _runFeature(FeatureRunnable feature) async {
     var haveAllScenariosPassed = true;
+    var maxAttempts = _config.attemptsNumber != 0 ? _config.attemptsNumber : 1;
     try {
       await _reporter.onFeatureStarted(
         StartedMessage(
@@ -74,8 +75,19 @@ class FeatureFileRunner {
 
       for (final scenario in feature.scenarios) {
         if (_canRunScenario(_config.tagExpression, scenario)) {
-          haveAllScenariosPassed &=
-              await _runScenarioInZone(scenario, feature.background);
+          var success = false;
+          for (var attempt = 0; attempt < maxAttempts; attempt++){
+            await _log(
+              'Attempt number $attempt fo scenario "${scenario.name}"',
+              feature.debug,
+              MessageLevel.info,
+            );
+            success = await _runScenarioInZone(scenario, feature.background);
+            if (success){
+              break;
+            }
+          }
+          haveAllScenariosPassed &= success;
           if (_config.stopAfterTestFailed && !haveAllScenariosPassed) {
             break;
           }

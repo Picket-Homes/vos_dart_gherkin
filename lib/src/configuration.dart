@@ -71,6 +71,9 @@ class TestConfiguration {
   /// the program will stop after any test failed
   bool stopAfterTestFailed = false;
 
+  /// attempts to run scenario until pass
+  int attemptsNumber = 1;
+
   /// used to allow for custom configuration to ensure framework specific configuration is in place
   void prepare() {}
 
