@@ -74,6 +74,9 @@ class TestConfiguration {
   /// attempts to run scenario until pass
   int attemptsNumber = 1;
 
+  /// directory where logs will be stored
+  String logsDir = '/tmp';
+
   /// used to allow for custom configuration to ensure framework specific configuration is in place
   void prepare() {}
 
