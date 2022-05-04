@@ -50,7 +50,6 @@ class FeatureFileRunner {
 
   Future<bool> _runFeature(FeatureRunnable feature) async {
     var haveAllScenariosPassed = true;
-    var maxAttempts = _config.attemptsNumber != 0 ? _config.attemptsNumber : 1;
     try {
       await _reporter.onFeatureStarted(
         StartedMessage(
@@ -73,19 +72,14 @@ class FeatureFileRunner {
         MessageLevel.info,
       );
 
+      var maxAttempts = _config.attemptsNumber != 0 ? _config.attemptsNumber : 1;
+      var doRetry = maxAttempts > 1;
+      var retryScenarios = [];
       for (final scenario in feature.scenarios) {
         if (_canRunScenario(_config.tagExpression, scenario)) {
-          var success = false;
-          for (var attempt = 0; attempt < maxAttempts; attempt++){
-            await _log(
-              'Attempt number $attempt fo scenario "${scenario.name}"',
-              feature.debug,
-              MessageLevel.info,
-            );
-            success = await _runScenarioInZone(scenario, feature.background);
-            if (success){
-              break;
-            }
+          var success = await _runScenarioInZone(scenario, feature.background);
+          if (!success && doRetry){
+            retryScenarios.add(scenario);
           }
           haveAllScenariosPassed &= success;
           if (_config.stopAfterTestFailed && !haveAllScenariosPassed) {
@@ -98,6 +92,34 @@ class FeatureFileRunner {
             MessageLevel.info,
           );
         }
+      }
+
+      if (retryScenarios.isNotEmpty) {
+        var successRetry = [];
+        maxAttempts--;
+        var retry = 1;
+        while (maxAttempts != 0){
+          for (final scenario in retryScenarios) {
+            await _log(
+              'Retry number $retry fo scenario "${scenario.name}"',
+              feature.debug,
+              MessageLevel.info,
+            );
+            var success = await _runScenarioInZone(scenario, feature.background);
+            if (success) {
+              successRetry.add(scenario);
+            }
+          }
+          for (var scenario in successRetry){
+            retryScenarios.remove(scenario);
+          }
+          if (retryScenarios.isEmpty){
+            break;
+          }
+          retry++;
+          maxAttempts--;
+        }
+        haveAllScenariosPassed = retryScenarios.isEmpty;
       }
     } on Error catch (err, st) {
       await _log(
