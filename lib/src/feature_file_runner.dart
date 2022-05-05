@@ -96,9 +96,8 @@ class FeatureFileRunner {
 
       if (retryScenarios.isNotEmpty) {
         var successRetry = [];
-        maxAttempts--;
         var retry = 1;
-        while (maxAttempts != 0){
+        while (maxAttempts != retry){
           for (final scenario in retryScenarios) {
             await _log(
               'Retry number $retry fo scenario "${scenario.name}"',
@@ -117,7 +116,6 @@ class FeatureFileRunner {
             break;
           }
           retry++;
-          maxAttempts--;
         }
         haveAllScenariosPassed = retryScenarios.isEmpty;
       }
