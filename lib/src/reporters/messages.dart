@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/attachments/attachment.dart';
+import 'package:vos_gherkin/src/gherkin/attachments/attachment.dart';
 
 import '../gherkin/models/table.dart';
 import '../gherkin/runnables/debug_information.dart';

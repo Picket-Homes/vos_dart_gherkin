@@ -1,4 +1,4 @@
-import 'package:gherkin/gherkin.dart';
+import 'package:vos_gherkin/gherkin.dart';
 import '../worlds/custom_world.world.dart';
 
 StepDefinitionGeneric WhenTheCharactersAreCounted() {

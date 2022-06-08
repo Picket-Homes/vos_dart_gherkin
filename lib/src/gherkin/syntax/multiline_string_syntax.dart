@@ -1,5 +1,5 @@
-import 'package:gherkin/src/gherkin/languages/dialect.dart';
-import 'package:gherkin/src/gherkin/syntax/empty_line_syntax.dart';
+import 'package:vos_gherkin/src/gherkin/languages/dialect.dart';
+import 'package:vos_gherkin/src/gherkin/syntax/empty_line_syntax.dart';
 
 import '../runnables/debug_information.dart';
 import '../runnables/multi_line_string.dart';

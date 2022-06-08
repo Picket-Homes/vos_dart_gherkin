@@ -1,10 +1,10 @@
-import 'package:gherkin/src/gherkin/runnables/debug_information.dart';
-import 'package:gherkin/src/gherkin/runnables/empty_line.dart';
-import 'package:gherkin/src/gherkin/runnables/example.dart';
-import 'package:gherkin/src/gherkin/runnables/scenario_outline.dart';
-import 'package:gherkin/src/gherkin/runnables/step.dart';
-import 'package:gherkin/src/gherkin/runnables/table.dart';
-import 'package:gherkin/src/gherkin/runnables/tags.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/debug_information.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/empty_line.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/example.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/scenario_outline.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/step.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/table.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/tags.dart';
 import 'package:test/test.dart';
 
 void main() {

@@ -1,6 +1,6 @@
-import 'package:gherkin/src/gherkin/languages/dialect.dart';
-import 'package:gherkin/src/gherkin/runnables/runnable.dart';
-import 'package:gherkin/src/gherkin/runnables/debug_information.dart';
+import 'package:vos_gherkin/src/gherkin/languages/dialect.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/runnable.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/debug_information.dart';
 
 import '../syntax/syntax_matcher.dart';
 

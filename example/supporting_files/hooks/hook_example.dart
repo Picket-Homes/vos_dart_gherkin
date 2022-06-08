@@ -1,4 +1,4 @@
-import 'package:gherkin/gherkin.dart';
+import 'package:vos_gherkin/gherkin.dart';
 
 class HookExample extends Hook {
   /// The priority to assign to this hook.

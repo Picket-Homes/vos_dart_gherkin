@@ -1,4 +1,4 @@
-import 'package:gherkin/gherkin.dart';
+import 'package:vos_gherkin/gherkin.dart';
 import 'package:test/test.dart';
 
 void main() {

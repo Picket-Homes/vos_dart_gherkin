@@ -1,6 +1,6 @@
-import 'package:gherkin/src/io/feature_file_matcher.dart';
-import 'package:gherkin/src/io/io_feature_file_accessor.dart';
-import 'package:gherkin/src/io/feature_file_reader.dart';
+import 'package:vos_gherkin/src/io/feature_file_matcher.dart';
+import 'package:vos_gherkin/src/io/io_feature_file_accessor.dart';
+import 'package:vos_gherkin/src/io/feature_file_reader.dart';
 
 import './gherkin/parameters/custom_parameter.dart';
 import './gherkin/steps/world.dart';

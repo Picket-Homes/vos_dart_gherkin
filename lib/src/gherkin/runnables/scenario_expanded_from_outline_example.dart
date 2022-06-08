@@ -1,5 +1,5 @@
-import 'package:gherkin/src/gherkin/runnables/scenario.dart';
-import 'package:gherkin/src/gherkin/runnables/scenario_type_enum.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/scenario.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/scenario_type_enum.dart';
 
 import './debug_information.dart';
 

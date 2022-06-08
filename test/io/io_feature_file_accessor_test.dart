@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:gherkin/gherkin.dart';
+import 'package:vos_gherkin/gherkin.dart';
 import 'package:glob/glob.dart';
 import 'package:test/test.dart';
 

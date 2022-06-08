@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-import 'package:gherkin/src/reporters/json/json_tag.dart';
+import 'package:vos_gherkin/src/reporters/json/json_tag.dart';
 
 import '../messages.dart';
 import '../reporter.dart';

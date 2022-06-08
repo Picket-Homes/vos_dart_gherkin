@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'dart:io';
-import 'package:gherkin/gherkin.dart';
+import 'package:vos_gherkin/gherkin.dart';
 import 'supporting_files/hooks/hook_example.dart';
 import 'supporting_files/parameters/power_of_two.parameter.dart';
 import 'supporting_files/steps/given_the_characters.step.dart';

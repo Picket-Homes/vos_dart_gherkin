@@ -1,9 +1,9 @@
 import 'dart:async';
-import 'package:gherkin/gherkin.dart';
-import 'package:gherkin/src/expect/expect_mimic.dart';
-import 'package:gherkin/src/gherkin/exceptions/parameter_count_mismatch_error.dart';
-import 'package:gherkin/src/gherkin/steps/step_configuration.dart';
-import 'package:gherkin/src/gherkin/steps/step_run_result.dart';
+import 'package:vos_gherkin/gherkin.dart';
+import 'package:vos_gherkin/src/expect/expect_mimic.dart';
+import 'package:vos_gherkin/src/gherkin/exceptions/parameter_count_mismatch_error.dart';
+import 'package:vos_gherkin/src/gherkin/steps/step_configuration.dart';
+import 'package:vos_gherkin/src/gherkin/steps/step_run_result.dart';
 import 'package:test/test.dart';
 
 import '../../mocks/reporter_mock.dart';
