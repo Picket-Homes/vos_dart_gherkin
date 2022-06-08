@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/runnables/taggable_runnable_block.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/taggable_runnable_block.dart';
 
 import '../exceptions/syntax_error.dart';
 import './background.dart';

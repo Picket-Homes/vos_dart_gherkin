@@ -1,4 +1,4 @@
-library gherkin;
+library vos_gherkin;
 
 export 'src/test_runner.dart';
 export 'src/configuration.dart';

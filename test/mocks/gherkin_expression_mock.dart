@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/expressions/gherkin_expression.dart';
+import 'package:vos_gherkin/src/gherkin/expressions/gherkin_expression.dart';
 
 typedef IsMatchFn = bool Function(String input);
 

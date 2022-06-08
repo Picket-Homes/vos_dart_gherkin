@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:path/path.dart';
 
-import 'package:gherkin/src/io/feature_file_matcher.dart';
+import 'package:vos_gherkin/src/io/feature_file_matcher.dart';
 
 import 'feature_file_reader.dart';
 

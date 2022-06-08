@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/runnables/comment_line.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/comment_line.dart';
 
 import './debug_information.dart';
 import './empty_line.dart';

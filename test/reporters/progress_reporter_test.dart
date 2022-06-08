@@ -1,5 +1,5 @@
-import 'package:gherkin/gherkin.dart';
-import 'package:gherkin/src/gherkin/runnables/debug_information.dart';
+import 'package:vos_gherkin/gherkin.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/debug_information.dart';
 import 'package:test/test.dart';
 
 class TestableProgressReporter extends ProgressReporter {

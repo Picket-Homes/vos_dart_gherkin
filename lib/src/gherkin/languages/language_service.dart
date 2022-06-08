@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/exceptions/dialect_not_supported.dart';
+import 'package:vos_gherkin/src/gherkin/exceptions/dialect_not_supported.dart';
 
 import 'dialect.dart';
 import 'languages.dart';

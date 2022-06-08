@@ -1,5 +1,5 @@
-import 'package:gherkin/gherkin.dart';
-import 'package:gherkin/src/reporters/aggregated_reporter.dart';
+import 'package:vos_gherkin/gherkin.dart';
+import 'package:vos_gherkin/src/reporters/aggregated_reporter.dart';
 import 'package:test/test.dart';
 
 import '../mocks/reporter_mock.dart';

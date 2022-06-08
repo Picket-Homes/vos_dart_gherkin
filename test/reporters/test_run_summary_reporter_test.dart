@@ -1,5 +1,5 @@
-import 'package:gherkin/gherkin.dart';
-import 'package:gherkin/src/gherkin/steps/step_run_result.dart';
+import 'package:vos_gherkin/gherkin.dart';
+import 'package:vos_gherkin/src/gherkin/steps/step_run_result.dart';
 import 'package:test/test.dart';
 
 class TestableTestRunSummaryReporter extends TestRunSummaryReporter {

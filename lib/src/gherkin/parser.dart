@@ -1,6 +1,6 @@
-import 'package:gherkin/src/gherkin/languages/language_service.dart';
-import 'package:gherkin/src/gherkin/runnables/dialect_block.dart';
-import 'package:gherkin/src/gherkin/runnables/multi_line_string.dart';
+import 'package:vos_gherkin/src/gherkin/languages/language_service.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/dialect_block.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/multi_line_string.dart';
 import 'package:collection/collection.dart';
 
 import './exceptions/syntax_error.dart';

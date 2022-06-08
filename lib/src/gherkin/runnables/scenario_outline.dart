@@ -1,5 +1,5 @@
-import 'package:gherkin/src/gherkin/runnables/scenario_expanded_from_outline_example.dart';
-import 'package:gherkin/src/gherkin/runnables/tags.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/scenario_expanded_from_outline_example.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/tags.dart';
 
 import '../exceptions/syntax_error.dart';
 import '../runnables/example.dart';

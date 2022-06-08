@@ -1,5 +1,5 @@
 import 'dart:async';
-import 'package:gherkin/src/gherkin/runnables/scenario_type_enum.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/scenario_type_enum.dart';
 import 'package:collection/collection.dart';
 
 import './reporters/message_level.dart';

@@ -1,4 +1,4 @@
-import 'package:gherkin/src/expect/expect_mimic.dart';
+import 'package:vos_gherkin/src/expect/expect_mimic.dart';
 
 import '../../utils/perf.dart';
 import './step_run_result.dart';

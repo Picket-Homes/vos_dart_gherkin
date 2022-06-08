@@ -1,4 +1,4 @@
-import 'package:gherkin/src/gherkin/runnables/tags.dart';
+import 'package:vos_gherkin/src/gherkin/runnables/tags.dart';
 
 import './debug_information.dart';
 import './empty_line.dart';
